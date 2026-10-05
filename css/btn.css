@@ -1,0 +1,43 @@
+.btn-more {
+    width: fit-content;
+    background-color: #B31217;
+    padding: 5px 10px;
+    margin: auto;
+    border: 2px solid #E1373D;
+    border-radius: 15px 0px;
+    
+}
+    .btn-more:hover {
+        background-color: #E1373D;
+        transition: 0.3s;
+        transform: scale(1.03);
+    }
+
+        .btn-more a {
+            color: #ffffff;
+        }
+
+            .btn-more a:hover {
+                color: #ffffff;
+            }
+.view-details {
+    position: absolute;
+    top: 0%;
+    color: #FFFFFF;
+    width: fit-content;
+    background-color: #B31217;
+    padding: 5px 10px;
+    margin: auto;
+    border: 2.5px solid #D83A3F;
+    border-radius: 15px 0px;
+}
+    .game a {
+        color: #FFFFFF;
+    }
+
+    .view-details:hover {
+        color: #FFFFFF;
+        background-color: #E1373D;
+        transition: 0.3s;
+        color: #FFFFFF;
+    }

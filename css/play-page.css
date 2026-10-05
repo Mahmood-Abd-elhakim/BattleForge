@@ -1,0 +1,106 @@
+.Featured-Games-paly-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    text-align: center;
+    justify-items: center;
+    column-gap: 20px;
+    padding: 10px 20px;
+}
+    .Featured-Games-paly-page .text {
+        grid-column: 1 / -1;
+        background: rgba(0, 0, 0, 0.45);
+        width: fit-content;
+        border-radius: var(--border);
+        backdrop-filter: blur(8px);
+        text-align: center;
+        margin: 0 auto 20px;;
+    }
+
+    .Featured-Games-paly-page .text p {
+        font-family: "Allura", serif;
+        font-size: 26px;
+        color: var(--min-color);
+        margin: 0;
+        margin-bottom: -15px;
+        text-align: center;
+    }
+
+    .Featured-Games-paly-page h2 {
+        font-family: "Cormorant Garamond", sans-serif;
+        font-size: 36px;
+        color: #F5F1EB;
+        margin: 0px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .Featured-Games-paly-page .game {
+        width: 245px;
+        height: 368px;
+        position: relative;
+        border: 2px solid #454a50d1;
+        box-shadow: 1px 5px 30px 5px #454a50d1;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 80px;
+        border-radius: var(--border);
+        transition: 0.5s;
+    }
+        .Featured-Games-paly-page .game:hover {
+            border: 2px solid rgba(216,58,63,.8);
+            box-shadow: 1px 5px 30px 5px rgba(216,58,63,.8);
+        }
+        .Featured-Games-paly-page .game img,
+        .Featured-Games-paly-page .game video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: var(--border);
+        }
+        .Featured-Games-paly-page .game video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+        }
+        .Featured-Games-paly-page .game:hover video {
+            opacity: 1;
+        }
+
+        .Featured-Games-paly-page .game div {
+            position: absolute;
+            right: 75%;
+            bottom: 5%;
+            transform: translate(75%, -5%);
+            color: #C71E24;
+            width: calc(100% - 60px);
+            display: flex;
+            flex-direction: column;
+            visibility: hidden;
+        }
+        .Featured-Games-paly-page .game:hover div {
+            visibility: visible;
+            transition: 0.5s;
+        }
+            .Featured-Games-paly-page .game div p {
+                font-size: 18px;
+                margin: 0;
+                background: rgba(13, 13, 13, 0.75);
+                border-radius: var(--border);
+            }
+            .Featured-Games-paly-page .game div a {
+                width: fit-content;
+                background: rgba(13, 13, 13, 0.75);
+                backdrop-filter: blur(8px);
+                padding: 5px 10px;
+                border: 2px solid var(--min-color);
+                border-radius: var(--border);
+                margin-top: 25px;               
+            }
+        .Featured-Games-paly-page .game a:hover  {
+            border-color: #FF3038;
+            transform: translateY(-5px);
+            box-shadow: 0 0 6px rgba(255, 48, 56, 0.35), 0 0 14px rgba(255, 48, 56, 0.20);
+            text-shadow: 0 0 6px rgba(255, 48, 56, 0.35), 0 0 14px rgba(255, 48, 56, 0.20);
+            transition: 0.5s;
+        }

@@ -1,0 +1,146 @@
+.log {
+    display: flex;
+    background-color: #270000;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+.i {
+    display: inline-block;
+    margin: 5px 20px;
+    font-size: 20px;
+}
+.email {
+    position: relative;
+}
+.email i {
+    position: absolute;
+    top: 50%;
+    left: 2.5%;
+    font-size: 16px;
+    transform: translateY(-50%);
+
+}
+.pass {
+    position: relative;
+}
+    .pass i {
+        position: absolute;
+        top: 50%;
+        left: 2.5%;
+        font-size: 16px; 
+        transform: translateY(-50%)
+    }
+.pas1s {
+    position: relative;
+}
+.pas1s i {
+    position: absolute;
+    top: 85%;
+    left: 2.5%;
+    font-size: 16px;
+    transform: translateY(-85%)
+}
+
+.sign-up {
+    margin-bottom: 10px;
+    padding: 1px 3px;
+    width: fit-content;
+    color: #E2E5E8;
+    background-color: #0D0D0D;
+    border: 2px solid #3A3A3A;
+    padding: 5px 25px 10px 25px
+}
+    .sign-up:hover {
+        background: #5A5A5A;
+        border-color: #B31217;
+        outline: none;
+    }
+    .sign-up a:hover {
+        color: #FFFFFf;
+    }
+input {
+    color: #E2E5E8;
+    background-color: #0D0D0D;
+    border: 2px solid #3A3A3A;
+    padding: 5px 25px 5px 25px;
+}
+    input:hover {
+        background: #5A5A5A;
+        border: 2px solid #5A5A5A;
+        outline: none;
+    }
+    input:focus {
+        border: 2px solid red;
+        outline: none;
+
+    }
+
+        .name, .email, .subject, .message, .pass, .sign, .date, .pas1s {
+            margin-bottom: 10px;
+        }
+
+        .rs-sub, .sub, .country {
+            margin-bottom: 20px;
+
+        }
+.rs-sub {
+    margin-top: -25px;
+}
+            .message textarea {
+                color: #E2E5E8;
+                background-color: #0D0D0D;
+                border: 2px solid #3A3A3A;
+            }
+
+            .message textarea:hover {
+                background: #5A5A5A;
+                border-color: #B31217;
+                outline: none;
+            }
+
+.country select {
+    color: #E2E5E8;
+    background-color: #0D0D0D;
+    border: 2px solid #3A3A3A;
+    padding: 5px 20px 5px 20px
+}
+
+            .country select:hover {
+                background: #5A5A5A;
+                border-color: #B31217;
+                outline: none;
+            }
+
+        .message textarea::placeholder {
+            color: #7A7A7A;
+        }
+
+        .email input::placeholder, .pass input::placeholder, .name input::placeholder {
+            color: #E2E5E8;
+        }
+
+        p {
+            width: 90%;
+            margin:auto;
+            margin-bottom: 35px
+        }
+.contact {
+    display: flex;
+    background-color: #270000;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -20px;
+
+}
+div label{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -15px
+}
+

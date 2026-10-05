@@ -1,0 +1,521 @@
+:root {
+    --min-color: #C71E24;
+    --border: 15px 0px;
+}
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* ✅ ياخد المساحة المتاحة دايمًا */
+    max-width: 1320px; /* ✅ بس متعديش الحد الأقصى ده */
+}
+
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 970px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+body {
+    background-color: #0d0d0d;
+    color: #A8AFB8;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    text-transform: capitalize;
+}
+hr {
+    margin: 0;
+    border-color: var(--min-color);
+}
+
+* {
+    box-sizing: border-box;
+    caret-color: #C71E24;
+}
+
+    a {
+        color: #E2E5E8;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+/*        a:hover {
+            color: var(--min-color);
+        }*/
+    /*        a:visited {
+            color: #B31217;
+        }
+*/
+
+/*start header*/
+
+.web-header {
+    color: #E6E6E6;
+    padding: 20px 0 30px;
+    position: relative;
+    min-height: 100vh;
+    align-content: center;
+    z-index : 1;
+}
+.header-background {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+    .header-background img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        animation: background 25s infinite;
+        opacity: 0;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+
+        .header-background img:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .header-background img:nth-child(2) {
+            animation-delay: 5s;
+        }
+
+        .header-background img:nth-child(3) {
+            animation-delay: 10s;
+        }
+
+        .header-background img:nth-child(4) {
+            animation-delay: 15s;
+        }
+
+        .header-background img:nth-child(5) {
+            animation-delay: 20s;
+        }
+
+    @keyframes background {
+        0% {
+            opacity: 0;
+            transform: scale(1)
+        }
+
+        3% {
+            opacity: 1;
+        }
+
+        28% {
+            opacity: 0.0;
+            transform: scale(1.24)
+        }
+
+        29% {
+            opacity: 0.0;
+            transform: scale(1.22)
+        }
+
+        100% {
+            opacity: 0;
+            transform: scale(1.16)
+        }
+    }
+
+    header .text {
+        background: rgba(0, 0, 0, 0.45);
+        padding: 10px 20px;
+        width: fit-content;
+        border-radius: var(--border);
+        backdrop-filter: blur(8px);
+        text-align: center;
+        margin: 0;
+    }
+
+    .web-header h1 {
+        font-family: "Cormorant Garamond", sans-serif;
+        font-size: 36px;
+        color: #F5F1EB;
+        margin: 0px;
+        line-height: 1.2;
+    }
+
+    .web-header p {
+        font-family: "Allura", serif;
+        font-size: 26px;
+        color: var(--min-color);
+        margin: 0;
+        margin-bottom: -15px;
+    }
+
+    .Home-logo {
+        display: flex;
+        margin-bottom: -10px;
+        position: relative;
+    }
+
+    .logo {
+        width: 120px;
+        height: 120px;
+    }
+    /*end header*/
+    /*start Featured Games */
+
+    .Featured-Games {
+        padding: 10px 20px;
+        position: relative;
+        height: 80vh;
+    }
+
+        .Featured-Games .text {
+            background: rgba(0, 0, 0, 0.45);
+            width: fit-content;
+            border-radius: var(--border);
+            backdrop-filter: blur(8px);
+            text-align: center;
+            margin: auto;
+        }
+
+        .Featured-Games p {
+            font-family: "Allura", serif;
+            font-size: 26px;
+            color: var(--min-color);
+            margin: 0;
+            margin-bottom: -15px;
+            text-align: center;
+        }
+
+        .Featured-Games h2 {
+            font-family: "Cormorant Garamond", sans-serif;
+            font-size: 36px;
+            color: #F5F1EB;
+            margin: 0px;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+    .back {
+        list-style: none;
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        margin: 0;
+        padding: 0px;
+        margin-top: 205px;
+    }
+        /* start scrollbar */
+        .back::-webkit-scrollbar {
+            height: 17px;
+        }
+
+        .back::-webkit-scrollbar-track {
+            background: rgba(13, 13, 13, 0.75);
+            border-radius: var(--border);
+        }
+
+        .back::-webkit-scrollbar-thumb {
+            background: var(--min-color);
+            border-radius: var(--border);
+        }
+    /* end scrollbar */
+
+    .Featured-Games .game {
+        border-radius: var(--border);
+    }
+
+        .Featured-Games .game img {
+            width: 175px;
+            height: 275px;
+            border-radius: var(--border);
+        }
+
+    .Featured-Games ul:hover .game img {
+        transition: 0.5s;
+        opacity: 0.2;
+    }
+
+    .Featured-Games .game:hover video {
+        transition: 0.5s;
+        opacity: 1;
+    }
+
+    .Featured-Games .game video {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        top: 0%;
+        left: 0%;
+        transform: translate(0% 0%);
+        z-index: -1;
+    }
+
+    .Featured-Games li {
+        width: 175px;
+        height: 275px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+    /*    .scrollbar {
+        display: flex;
+        position: absolute;
+        top: 75%;
+        right: 65%;
+        transform: translate(-60%, -75%);
+        gap: 50px;
+    }
+        .scrollbar i {
+            position: absolute;
+            font-size: 30px;
+            color: #6868688f
+        }
+    .left:hover i {
+        color: #C71E24;
+        transition: 0.5s;
+    }
+    .right:hover i {
+        color: #C71E24;
+        transition: 0.5s;
+    }*/
+
+    .Featured-Games-btn {
+        width: fit-content;
+        background: rgba(13, 13, 13, 0.75);
+        backdrop-filter: blur(8px);
+        padding: 5px 10px;
+        margin: 10px auto;
+        border: 2px solid var(--min-color);
+        border-radius: var(--border);
+        transition: 0.5s;
+    }
+
+        .Featured-Games-btn:hover {
+            border-color: #FF3038;
+            transform: translateY(-2px);
+            box-shadow: 0 0 6px rgba(255, 48, 56, 0.35), 0 0 14px rgba(255, 48, 56, 0.20);
+            text-shadow: 0 0 6px rgba(255, 48, 56, 0.35), 0 0 14px rgba(255, 48, 56, 0.20);
+        }
+
+            .Featured-Games-btn:hover a {
+                color: #FF3038;
+            }
+    /* end Featured Games */
+    /* start Tournaments */
+    .Tournaments {
+        text-align: center;
+        padding: 10px 20px 0;
+    }
+
+        .Tournaments .text {
+            background: rgba(0, 0, 0, 0.45);
+            width: fit-content;
+            border-radius: var(--border);
+            backdrop-filter: blur(8px);
+            text-align: center;
+            margin: auto;
+        }
+
+        .Tournaments .Tournament {
+            font-family: "Allura", serif;
+            font-size: 26px;
+            color: var(--min-color);
+            margin: 0;
+            margin-bottom: -15px;
+            text-align: center;
+        }
+
+        .Tournaments h2 {
+            font-family: "Cormorant Garamond", sans-serif;
+            font-size: 36px;
+            color: #F5F1EB;
+            margin: 0px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+        }
+
+    .Tournaments-btn {
+        width: fit-content;
+        background: rgba(13, 13, 13, 0.75);
+        backdrop-filter: blur(8px);
+        padding: 5px 10px;
+        margin: 10px auto;
+        border: 2px solid var(--min-color);
+        border-radius: var(--border);
+        transition: 0.5s;
+    }
+
+        .Tournaments-btn:hover {
+            border-color: #FF3038;
+            transform: translateY(-2px);
+            box-shadow: 0 0 6px rgba(255, 48, 56, 0.35), 0 0 14px rgba(255, 48, 56, 0.20);
+            text-shadow: 0 0 6px rgba(255, 48, 56, 0.35), 0 0 14px rgba(255, 48, 56, 0.20);
+        }
+
+            .Tournaments-btn:hover a {
+                color: #FF3038;
+            }
+    /* end Tournaments */
+    /* start Official Game Partners */
+
+    .Official-Game-Partners {
+        padding: 10px 0 20px;
+    }
+
+        .Official-Game-Partners .text {
+            background: rgba(0, 0, 0, 0.45);
+            width: fit-content;
+            border-radius: var(--border);
+            backdrop-filter: blur(8px);
+            text-align: center;
+            margin: auto;
+        }
+
+        .Official-Game-Partners p {
+            font-family: "Allura", serif;
+            font-size: 26px;
+            color: var(--min-color);
+            margin: 0;
+            margin-bottom: -15px;
+            text-align: center;
+        }
+
+        .Official-Game-Partners h2 {
+            font-family: "Cormorant Garamond", sans-serif;
+            font-size: 36px;
+            color: #F5F1EB;
+            margin: 0px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+        }
+
+.Official-Game-Partners aside {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+    .Official-Game-Partners a:hover {
+        color: var(--min-color);
+        border-bottom: 2px solid var(--min-color);
+        transform: translateY(-5px);
+        transition: 0.5s;
+        width: fit-content;
+    }
+    /* end Official Game Partners */
+    /* start footer*/
+    .MM {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+        .MM .text {
+            background: rgba(0, 0, 0, 0.45);
+            width: fit-content;
+            border-radius: var(--border);
+            backdrop-filter: blur(8px);
+            text-align: center;
+            margin: auto;
+        }
+
+            .MM .text p {
+                font-family: "Allura", serif;
+                font-size: 26px;
+                color: var(--min-color);
+                margin: 0;
+                margin-bottom: -15px;
+                text-align: center;
+            }
+
+            .MM .text h2 {
+                font-family: "Cormorant Garamond", sans-serif;
+                font-size: 36px;
+                color: #F5F1EB;
+                margin: 0px;
+                line-height: 1.2;
+                margin-bottom: 20px;
+                padding-bottom: 5px;
+            }
+
+        .MM p:last-child {
+            text-align: center;
+        }
+
+        .MM i:hover {
+            color: var(--min-color);
+            transform: scale(1.2);
+            transition: 0.5s;
+        }
+    /* end footer*/
+
+
+@media (max-width: 768px) {
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    header .text {
+        padding: 5px 10px;
+    }
+
+    .web-header p {
+        font-size: 21px;
+    }
+
+    .web-header h1 {
+        font-size: 29px;
+    }
+
+    .Featured-Games p {
+        font-size: 21px;
+    }
+
+    .Featured-Games h2 {
+        font-size: 29px;
+        margin: 2px;
+    }
+    .back {
+        display: flex;
+        overflow: auto;
+        margin: -15px;
+        padding: 0px;
+        flex-direction: column;
+        height: 72vh;
+        margin-top: 5px;
+        align-items: flex-end;
+    }
+    .Featured-Games li {
+        width: 125px;
+        height: 225px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    .Featured-Games .game img {
+        width: 125px;
+        height: 225px;
+        border-radius: var(--border);
+    }
+}

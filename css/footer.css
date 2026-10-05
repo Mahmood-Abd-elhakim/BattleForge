@@ -1,0 +1,16 @@
+    footer hr {
+        margin-top: 75px;
+    }
+    footer .MM a {
+        display: inline-block;
+        margin-right: 50px;
+    }
+.MM aside {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around;
+}
+footer .I {
+    display: inline-block;
+    font-size: 26px;
+}

@@ -1,0 +1,98 @@
+.League-page {
+position: relative;
+}
+    header h2 {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: auto;
+        z-index: 10;
+    }
+    header video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    header img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 20%;
+        height: auto;
+        z-index: 10;
+    }
+.Active-Tournaments .text {
+    background: rgba(0, 0, 0, 0.45);
+    width: fit-content;
+    border-radius: var(--border);
+    backdrop-filter: blur(8px);
+    text-align: center;
+    margin: auto;
+}
+.Active-Tournaments .text p {
+    font-family: "Allura", serif;
+    font-size: 26px;
+    color: var(--min-color);
+    margin: 0;
+    margin-bottom: -15px;
+    text-align: center;
+}
+.Active-Tournaments .text h2 {
+    font-family: "Cormorant Garamond", sans-serif;
+    font-size: 36px;
+    color: #F5F1EB;
+    margin: 0px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.top-players .text {
+    background: rgba(0, 0, 0, 0.45);
+    width: fit-content;
+    border-radius: var(--border);
+    backdrop-filter: blur(8px);
+    text-align: center;
+    margin: auto;
+}
+    .top-players .text p {
+        font-family: "Allura", serif;
+        font-size: 26px;
+        color: var(--min-color);
+        margin: 0;
+        margin-bottom: -15px;
+        text-align: center;
+}
+    .top-players .text h2 {
+        font-family: "Cormorant Garamond", sans-serif;
+        font-size: 36px;
+        color: #F5F1EB;
+        margin: 0px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+.Top-Players img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Top-Players {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-bottom: 10px
+}
+    .Top-Players .col1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+        
+

@@ -1,0 +1,170 @@
+/*start table*/
+.Tournaments i {
+    margin-right: 5px;
+}
+table caption {
+    font-family: "Allura", serif;
+    font-size: 26px;
+    color: var(--min-color);
+    margin: 0;
+    margin-bottom: -10px;
+    text-align: center;
+}
+.Tournaments table {
+    border-spacing: 0px 10px;
+    width: 100%;
+    border-collapse: separate;
+}
+
+    .Tournaments table thead tr th {
+        background-color: #121415;
+        height: 60px;
+        border-top: 2px solid #282727;
+        border-bottom: 2px solid #282727;
+        font-size: 20px;
+    }
+
+        .Tournaments table thead tr th:first-child {
+            border-left: 2px solid #282727;
+            border-radius: 15px 0 0 0px;
+        }
+
+        .Tournaments table thead tr th:last-child {
+            border-right: 2px solid #282727;
+            border-radius: 0 0 15px 0;
+        }
+
+    .Tournaments table tr td {
+        background-color: #121415;
+        height: 60px;
+        border-top: 2px solid #282727;
+        border-bottom: 2px solid #282727;
+    }
+
+        .Tournaments table tr td:first-child {
+            border-left: 2px solid #282727;
+            border-radius: 15px 0 0 0px;
+        }
+
+        .Tournaments table tr td:last-child {
+            border-right: 2px solid #282727;
+            border-radius: 0 0 15px 0;
+        }
+
+    .Tournaments table td {
+        position: relative;
+    }
+
+        .Tournaments table td:not(:first-child)::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 15px;
+            height: 30px;
+            width: 2px;
+            background-color: #282727;
+        }
+
+table .full {
+    padding: 5px 30px;
+    background-color: #241211;
+    border-radius: var(--border);
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    color: #C71E24;
+    border: 1px solid #C71E24;
+}
+
+table .open {
+    padding: 5px 30px;
+    background-color: #122319;
+    border-radius: var(--border);
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    color: #29e586;
+    border: 1px solid #29e586;
+}
+
+table .Soon {
+    padding: 5px 30px;
+    background-color: #211c0f;
+    border-radius: var(--border);
+    margin: auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    color: #f6c13d;
+    border: 1px solid #f6c13d;
+}
+
+    table .full i, table .open i, table .Soon i {
+        font-size: 10px;
+    }
+
+.tournaments-game {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+    .tournaments-game img {
+        width: 50px;
+        height: 50px;
+        margin: 0px 20px;
+        object-fit: contain;
+    }
+/*end table */
+
+/* start Leaderboard*/
+
+.Leaderboard td div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Leaderboard img {
+    margin: 5px 0;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    object-fit: cover
+}
+
+/* end Leaderboard*/
+
+@media (max-width: 768px) {
+    .tournaments-game {
+        display: flex;
+        flex-direction: column;
+        width: 75px;
+    }
+    .Tournaments table td:not(:first-child)::after {
+        height: 100%;
+        top: 1px;
+    }
+    table {
+        font-size: 14px;
+    }
+    .Tournaments table tr td:first-child {
+        display: none
+    }
+    thead {
+        display: none;
+    }
+    table .open, table .full, table .Soon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 7px;
+        height: 35px;
+        width: 60px;
+    }
+}

@@ -183,7 +183,6 @@ hr {
     .Featured-Games {
         padding: 10px 20px;
         position: relative;
-        height: 80vh;
     }
 
         .Featured-Games .text {
@@ -193,6 +192,12 @@ hr {
             backdrop-filter: blur(8px);
             text-align: center;
             margin: auto;
+        }
+
+        .Featured-Games .game-list {
+            display: flex;
+            height: 80vh;
+            align-items: flex-end;
         }
 
         .Featured-Games p {
@@ -218,9 +223,8 @@ hr {
         display: flex;
         overflow-x: auto;
         overflow-y: hidden;
-        margin: 0;
+        margin-bottom: -10px;
         padding: 0px;
-        margin-top: 205px;
     }
         /* start scrollbar */
         .back::-webkit-scrollbar {
@@ -266,7 +270,7 @@ hr {
         object-fit: cover;
         top: 0%;
         left: 0%;
-        transform: translate(0% 0%);
+        transform: translate(0%, 0%);
         z-index: -1;
     }
 
@@ -499,18 +503,12 @@ hr {
     .back {
         display: flex;
         overflow: auto;
-        margin: -15px;
-        padding: 0px;
-        flex-direction: column;
-        height: 72vh;
-        margin-top: 5px;
-        align-items: flex-end;
+        margin: -10px;
     }
     .Featured-Games li {
         width: 125px;
         height: 225px;
         margin-right: 10px;
-        margin-bottom: 20px;
     }
 
     .Featured-Games .game img {
